@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/df8e597e58.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="./images/logo.png.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>WEB DEVELOPER</p>
+            <h1>Hi, I'm <span>Sai Krishna</span><br>From India</h1>
+        </div>
+    </div>
+</div>    
+<!-- -------------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/sai-img.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I'm Sai Krishna, an Aspiring Web Developer with a strong drive to create captivating and user-friendly websites. I'm thrilled to embark on my journey as a web developer and turn my passion for coding into real-world projects.As a recent graduate, I bring fresh perspectives and an eagerness to learn and grow in the field of web development. I'm proficient in HTML, CSS, JAVASCRIPT and React Js, and I'm excited to explore new frameworks and technologies to expand my skillset. Building responsive and visually appealing websites that engage users is my primary focus.</p>
+                <p>During my academic journey, I had the opportunity to work on various class projects, including building a simple e-commerce website and crafting interactive web applications. These experiences have honed my coding skills and have given me a taste of the creative freedom web development offers.I'm a strong believer in continuous improvement, and I'm always eager to take on new challenges. I'm committed to staying updated with the latest trends in web development and pushing the boundaries of my abilities.</p>
+                <p>Thank you for visiting my portfolio, and I hope you enjoy exploring my work!</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                <p class="tab-links " onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>FRONTEND DEVELOPER</span><br>Proficient in designing and developing web and app interfaces with a focus on user interaction, visual aesthetics, and responsiveness to ensure an optimal user experience.</li>
+                    <li><span>REACT JS DEVELOPER</span><br>Skilled in leveraging the React.js library to develop dynamic and efficient web applications, specializing in building user interfaces and front-end components to facilitate seamless user interactions and enhance usability. </li>
+                    <li><span>UI/UX DEVELOPER</span><br>Skilled in designing intuitive and visually appealing interfaces for web and mobile applications, prioritizing user experience and interaction design.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2022</span><br>Internship at SkillDzire.</li>
+ <!--               <li><span>2021 - Current</span><br>UX/UI Design Training at ET Institute</li>
+                    <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                    <li><span>2017 - 2019</span><br>UX/UI Design Executive at Coin Digital Ltd.</li>
+                    <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+-->                   
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2023</span><br>BTECH from ANURAG ENGINEERING COLLEGE, KODAD</li>
+                    <li><span>2019</span><br>INTERMEDIATE from SRI GAYITRI JR COLLEGE, HYDERABAD</li>
+                    <li><span>2017</span><br>SSC from ST.JOHNS HIGH SCHOOL, MIRYALGUDA</li>
+                </ul>
+            </div>
+            
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!---------------Services---------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Application Development</h2>
+                <p>Building interactive and dynamic web applications that perform specific functions or tasks, such as e-commerce platforms, social media platforms, or online booking systems.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop"></i>
+                <h2>Website Development</h2>
+                <p>Designing and creating websites for individuals, businesses, or organizations. This can include static websites, dynamic websites, and content management systems.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Frontend Development</h2>
+                <p>Developing the client-side of web applications using HTML, CSS, and JavaScript, and implementing frameworks and libraries like React.js, Angular, or Vue.js to enhance functionality and user experience.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ---------portfolio------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Keeper App.jpg">
+                <div class="layer">
+                    <h3>Keeper App</h3>
+                    <p>The Keeper App is a dynamic web application crafted with React.js, HTML, and CSS to seamlessly facilitate note-taking and organization for users. Empowering individuals to effortlessly create and manage their notes, this intuitive platform provides a user-friendly experience. </p>
+                    <a href="https://saikande09.github.io/Keeper-App/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Expense Tracker.jpg">
+                <div class="layer">
+                    <h3>Expense Tracker App</h3>
+                    <p>Introducing the Expense Tracker App a dynamic web application crafted with React.js to seamlessly facilitate expense tracking. Empowering users with intuitive state management using React Hooks and a polished UI design with styled-components. </p>
+                    <a href="https://saikande09.github.io/Expense-Tracker/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ToDolist.jpg">
+                <div class="layer">
+                    <h3>To-Do List App</h3>
+                    <p>The Todo App is a dynamic web application crafted with React.js, HTML, and CSS to streamline task management and boost productivity. This intuitive platform empowers users to stay organized and focused on their goals with ease. </p>
+                    <a href="https://saikande09.github.io/TODO-LIST/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+
+</div>
+<!-- --------contact------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>contact@saikrish9988@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8247390251</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy;SaiKrishna Made with <i class="fas fa-heart"></i></p>
+    </div>
+
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyodizXBsq_FTGfSihqP7-TkYkYNxnorC124ZiMqejCVV9e_xrGh3iIpruWvBUBlk7IgA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    
+</body>
+</html>
